@@ -1,0 +1,12 @@
+generated: '2026-09-27'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://beducated.com/legal/privacy
+sources:
+- https://beducated.com/legal/privacy
+standards:
+- id: pci-dss
+  conforms: true
+  evidence: Stripe collects payment information directly and is PCI-DSS compliant.
+docs: https://beducated.com/legal/privacy
+note: 1 extracted row(s) were dropped because their quote was not on the page.

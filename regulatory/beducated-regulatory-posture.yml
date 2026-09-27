@@ -1,0 +1,64 @@
+generated: '2026-09-27'
+method: searched
+source: https://beducated.com/legal/privacy
+signals:
+  data_retention:
+    url: https://beducated.com/legal/privacy
+    section: "7. Data Retention"
+    note: "Specifies how long account data is kept."
+    evidence:
+      - quote: "Account data: Retained for the duration of your account, plus 30 days after deletion."
+        http_status: 200
+        fetched: "/tmp/beducated_privacy.html"
+        source: https://beducated.com/legal/privacy
+  data_subject_request:
+    url: https://beducated.com/legal/privacy
+    section: "8. Your Rights Under GDPR"
+    note: "Provides mechanism for data subject requests."
+    evidence:
+      - quote: "To exercise these rights, contact us at legal@beducated.com. We will respond within 30 days."
+        http_status: 200
+        fetched: "/tmp/beducated_privacy.html"
+        source: https://beducated.com/legal/privacy
+  subprocessors:
+    - url: https://beducated.com/legal/privacy
+      section: "Third-Party Services"
+      note: "Lists a CDN as a subprocessors."
+      evidence:
+        - quote: "We use Bunny.net as our content delivery network to serve website and application assets quickly worldwide."
+          http_status: 200
+          fetched: "/tmp/beducated_privacy.html"
+          source: https://beducated.com/legal/privacy
+    - url: https://beducated.com/legal/privacy
+      section: "Third-Party Services"
+      note: "Vercel as a subprocessors."
+      evidence:
+        - quote: "Our application platform is hosted on Vercel. Vercel processes your IP address and request data to serve the application."
+          http_status: 200
+          fetched: "/tmp/beducated_privacy.html"
+          source: https://beducated.com/legal/privacy
+    - url: https://beducated.com/legal/privacy
+      section: "Third-Party Services"
+      note: "Neon as a subprocessors with EU residency."
+      evidence:
+        - quote: "Our application database is hosted on Neon (serverless PostgreSQL) in the EU (Frankfurt)."
+          http_status: 200
+          fetched: "/tmp/beducated_privacy.html"
+          source: https://beducated.com/legal/privacy
+  data_residency:
+    - url: https://beducated.com/legal/privacy
+      section: "Third-Party Services"
+      note: "Data stored within the EU."
+      evidence:
+        - quote: "Our application database is hosted on Neon (serverless PostgreSQL) in the EU (Frankfurt)."
+          http_status: 200
+          fetched: "/tmp/beducated_privacy.html"
+          source: https://beducated.com/legal/privacy
+    - url: https://beducated.com/legal/privacy
+      section: "Third-Party Services"
+      note: "Analytics data processed in EU."
+      evidence:
+        - quote: "We use Matomo for web analytics, self-hosted on servers in Frankfurt, Germany (DigitalOcean FRA1 region, EU)."
+          http_status: 200
+          fetched: "/tmp/beducated_privacy.html"
+          source: https://beducated.com/legal/privacy

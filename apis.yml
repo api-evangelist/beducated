@@ -1,23 +1,86 @@
 aid: beducated
+
 name: Beducated
-description: 'Beducated is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://beducated.com/social_images/og-default.jpg
+
+description: Beducated is an online platform offering 150+ courses on sex and relationships, providing safe, inclusive education for adults of
+  all orientations and genders. It aims to improve sexual skills and confidence through expert-led video tutorials and interactive exercises,
+  fostering better intimacy and personal growth.
+
 url: https://raw.githubusercontent.com/api-evangelist/beducated/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
-- Company
-apis: []
+- Education
+- SexualHealth
+- OnlineLearning
+- Courses
+- AdultEducation
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Main site redirects to my.beducated.com and provides no machine‑readable API spec.
+  evidence:
+  - url: https://app.beducated.com
+    status: 200
+  checked: '2026-09-27'
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Vendors
+  url: vendors/beducated-vendors.yml
+- type: Conformance
+  url: conformance/beducated-conformance.yml
+- type: Hosts
+  url: hosts/beducated-hosts.yml
+- type: Support
+  url: https://support.beducated.com/
+- type: Newsroom
+  url: https://beducated.com/press
+- type: Login
+  url: https://my.beducated.com/login/
+- type: DomainSecurity
+  url: security/beducated-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/beducated
+  url: https://beducated.com
+- type: Documentation
+  url: https://beducated.com/about
+- type: GettingStarted
+  url: https://beducated.com/get-started
+- type: PrivacyPolicy
+  url: https://beducated.com/legal/privacy
+- type: TermsOfService
+  url: https://beducated.com/legal/terms
+- type: Imprint
+  url: https://beducated.com/legal/imprint
+
+apis:
+- name: Beducated API
+  description: API for Beducated platform offering course data and user management.
+  humanURL: https://beducated.com/get-started
+  aid: beducated:beducated-api
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
